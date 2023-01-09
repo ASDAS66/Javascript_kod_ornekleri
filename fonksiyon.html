@@ -1,0 +1,33 @@
+<hmtl>
+    <head>
+        <body>
+            <script>
+           //fonksiyon kullanımı 
+           function selamver(){
+            alert("merhabalar efenim!!!")
+           }
+           selamver()
+           selamver()
+           ////////////// 
+           let username='john';
+           function selamver2(){
+            let username='beyza';// fonksiyon içindeki username değeri gecerlidir
+
+            let message='hello, '+username;//beyza
+            alert(message)
+           }
+           selamver2();
+           alert(username);//john yazdırır
+          /////////////////////////////////////////////
+          function showmessage(from,text)
+          {
+            from='*'+from+'*';
+            alert(from+': '+ text);
+          }
+          let from="ann";
+          showmessage(from,"hello")//*ann* hello
+          alert(from);//ann
+          </script>
+        </body>
+    </head>
+</hmtl>
