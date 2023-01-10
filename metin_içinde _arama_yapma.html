@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="p1">Beyza Arslan</p>
+    <button onclick="Ara()">Bul</button>
+    <p id="demo"></p>
+    <script>
+        function ara(){
+            let str=document.getElementById("p1").innerHTML;
+            let konum=str.search("y");
+            document.getElementById("demo").innerHTML = konum;
+        }
+    </script>
+</body>
+
+</html>

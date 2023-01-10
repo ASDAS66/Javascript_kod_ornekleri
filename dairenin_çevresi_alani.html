@@ -1,0 +1,14 @@
+ 
+<input type="text" id="kenar" placeholder="Yarıçapı girin">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+function hesapla(){
+    let sayi=document.getElementById("kenar").value;
+    yarıcap=Number(sayi);
+    let alan=3.14*yarıcap*yarıcap;
+    let çevre=2*3.14*yarıcap;
+    alert("dairenin alanı : "+alan+" cevresi "+çevre)
+}
+var hesapBtn=document.getElementById("hesapla");
+hesapBtn.onclick=hesapla;
+   </script>

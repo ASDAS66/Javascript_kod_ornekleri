@@ -1,0 +1,23 @@
+<input type="text" id="kisa" placeholder="Kısa Kenarı girin">
+<input type="text" id="uzun" placeholder="Uzun Kenarı girin">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+    function hesapla(){
+        let kısa_k=document.getElementById("kisa").value;
+        let uzun_k=document.getElementById("uzun").value;
+        
+        kısa_k=Number(kısa_k);
+        uzun_k=Number(uzun_k);
+        var alan=kısa_k*uzun_k;
+        var cevre=kısa_k*2+uzun_k*2;
+        alert("Dikdörtgen alanı:"+alan+" \n Dikdörtgen çevresi:"+cevre);
+        
+    }
+    
+//hesaplama yapması için hesap butonunu seçiyoruz.
+var hesapBtn=document.getElementById("hesapla");
+ 
+ //fonksiyonu olaya bağlıyoruz.
+ hesapBtn.onclick=hesapla;
+  
+</script>
